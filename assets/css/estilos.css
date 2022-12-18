@@ -38,7 +38,14 @@ body {
     background-color: #15191c;
     width: 75vw;
     height: 100vh;
+    position: absolute;
+    left: -100vh;
+    transform: 0.25s;
+}
 
+.menu-lateral--ativo {
+    left: 0;
+    transform: 0.25s;
 }
 
 .menu-lateral__logo {
@@ -64,26 +71,32 @@ body {
     left: 24px;
 }
 
-.menu-lateral__link--inicio {
-    content: "";
+.menu-lateral__link--ativo{
+    color: #ffffff;
+    padding-left: 56px;
+    border-left: 8px solid #ffffff;
 }
 
-.menu-lateral__link--Videos {
-    content: "";
+.menu-lateral__link--inicio::before {
+    content: "\e902";
 }
 
-.menu-lateral__link--Picos {
-    content: "";
+.menu-lateral__link--Videos::before {
+    content: "\e90e";
 }
 
-.menu-lateral__link--Integrantes {
-    content: "";
+.menu-lateral__link--Picos::before {
+    content: "\e909";
 }
 
-.menu-lateral__link--camisas {
-    content: "";
+.menu-lateral__link--Integrantes::before {
+    content: "\e903";
 }
 
-.menu-lateral__link--pinturas {
-    content: "";
+.menu-lateral__link--camisas::before {
+    content: "\e900";
+}
+
+.menu-lateral__link--pinturas::before {
+    content: "\e90a";
 }
